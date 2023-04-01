@@ -10,7 +10,6 @@ const AuthButtons: React.FC = () => {
         display={{ base: "none", sm: "flex" }}
         width={{ base: "70px", md: "110px" }}
         mr={2}
-        // onClick={() => {}}
       >
         Log In
       </Button>
