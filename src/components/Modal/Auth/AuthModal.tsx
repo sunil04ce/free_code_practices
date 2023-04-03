@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { useRecoilState } from "recoil";
 import { authModalState } from "@component/src/atoms/authModalAtom";
+import AuthInputs from "./AuthInputs";
 
 const AuthModal: React.FC = () => {
   // const { isOpen, onOpen, onClose } = useDisclosure();
@@ -45,7 +46,11 @@ const AuthModal: React.FC = () => {
               justify="center"
               width="70%"
               border="1px solid red"
-            ></Flex>
+            >
+              {/* <OAuthButtons /> */}
+              <AuthInputs />
+              {/* <ResetPassword /> */}
+            </Flex>
           </ModalBody>
         </ModalContent>
       </Modal>
